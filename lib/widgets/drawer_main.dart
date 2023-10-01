@@ -12,7 +12,7 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.blueGrey,
+        // backgroundColor: Colors.blueGrey,
         body: InAppWebView(
           initialUrlRequest: URLRequest(
             url: Uri.parse(
@@ -42,7 +42,7 @@ class DrawerMainState extends State<DrawerMain> {
             255, 58, 74, 87); // Define primary color based on dark mode
 
     return Drawer(
-      backgroundColor: Colors.blueGrey,
+      // backgroundColor: Colors.blueGrey,
       child: SafeArea(
         child: Column(
           children: [

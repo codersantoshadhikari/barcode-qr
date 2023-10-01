@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import '../main.dart';
 import '../providers/barcode_provider.dart';
 import '../utils/keys.dart';
@@ -20,14 +19,17 @@ class _MainScreenState extends State<MainScreen> {
       return Scaffold(
         key: mainKey,
         drawer: const DrawerMain(),
-        appBar: AppBar( 
-          backgroundColor: Colors.blueGrey,
-          title: const Text("Barcode & QRcode Scanner"),
+        appBar: AppBar(
+          backgroundColor: const Color.fromARGB(255, 156, 170, 178),
+          title: const Text(
+            "Barcode & QRcode Scanner",
+            style: TextStyle(color: Colors.black),
+          ),
         ),
-        backgroundColor: Colors.blueGrey,
+        // backgroundColor: Colors.blueGrey,
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: FloatingActionButton.extended(
-            backgroundColor: Colors.blueGrey,
+            // backgroundColor: Colors.blueGrey,
             onPressed: () => barcode.scanBarcodeNormal(),
             label: const Row(
               children: [
@@ -35,7 +37,7 @@ class _MainScreenState extends State<MainScreen> {
                 SizedBox(width: 6),
                 Text(
                   "Scan",
-                  style: TextStyle(fontSize: 16),
+                  style: TextStyle(fontSize: 16, color: Colors.black),
                 )
               ],
             )),
@@ -53,7 +55,7 @@ class _MainScreenState extends State<MainScreen> {
               margin: const EdgeInsets.all(12),
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 173, 171, 171),
+                  // color: const Color.fromARGB(255, 173, 171, 171),
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(color: primary)),
               child: SelectableText(barcode.barcodeScanRes,
