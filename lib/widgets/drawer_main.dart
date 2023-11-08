@@ -16,7 +16,7 @@ class AboutPage extends StatelessWidget {
         body: InAppWebView(
           initialUrlRequest: URLRequest(
             url: Uri.parse(
-                'https://santoshadhikary.github.io/Barcode-QR-scannerprivacypolicy/'), // URL of the privacy policy page
+                'https://codersantoshadhikari.github.io/Barcode-QR-Code-Scanner/'), // URL of the privacy policy page
           ),
         ),
       ),
