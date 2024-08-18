@@ -7,7 +7,7 @@ import '../utils/keys.dart';
 import '../widgets/drawer_main.dart';
 
 class MainScreen extends StatefulWidget {
-  const MainScreen({Key? key});
+  const MainScreen({super.key, });
 
   @override
   State<MainScreen> createState() => _MainScreenState();
@@ -39,7 +39,8 @@ class _MainScreenState extends State<MainScreen> {
           backgroundColor: const Color.fromARGB(255, 255, 255, 255),
           title: const Text(
             "Barcode & QRcode Scanner",
-            style: TextStyle(color: Colors.black),
+            style: TextStyle(
+                color: Colors.black, fontSize: 22, fontWeight: FontWeight.bold),
           ),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
